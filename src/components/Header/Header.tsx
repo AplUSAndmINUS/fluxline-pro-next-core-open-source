@@ -5,10 +5,8 @@ import Link from 'next/link';
 import {
   makeStyles,
   tokens,
-  Button,
   Text,
 } from '@fluentui/react-components';
-import { Navigation24Regular } from '@fluentui/react-icons';
 
 const useStyles = makeStyles({
   header: {
@@ -41,17 +39,10 @@ const useStyles = makeStyles({
       backgroundColor: tokens.colorNeutralBackground1Hover,
     },
   },
-  menuButton: {
-    display: 'none',
-    '@media (max-width: 768px)': {
-      display: 'block',
-    },
-  },
 });
 
 export const Header: React.FC = () => {
   const styles = useStyles();
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   return (
     <header className={styles.header}>
@@ -70,14 +61,6 @@ export const Header: React.FC = () => {
           Services
         </Link>
       </nav>
-
-      <Button
-        appearance="subtle"
-        icon={<Navigation24Regular />}
-        className={styles.menuButton}
-        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        aria-label="Toggle menu"
-      />
     </header>
   );
 };

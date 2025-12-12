@@ -41,10 +41,10 @@ const useStyles = makeStyles({
 });
 
 const team = [
-  { name: 'Leadership Team', role: 'Executive Management', initials: 'LT' },
-  { name: 'Development Team', role: 'Engineering', initials: 'DT' },
-  { name: 'Design Team', role: 'UX/UI Design', initials: 'DT' },
-  { name: 'Support Team', role: 'Customer Success', initials: 'ST' },
+  { name: 'Leadership Team', role: 'Executive Management' },
+  { name: 'Development Team', role: 'Engineering' },
+  { name: 'Design Team', role: 'UX/UI Design' },
+  { name: 'Support Team', role: 'Customer Success' },
 ];
 
 export const TeamSection: React.FC = () => {
