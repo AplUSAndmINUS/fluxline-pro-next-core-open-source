@@ -31,5 +31,5 @@ export const fluxlineLightTheme: Theme = createLightTheme(fluxlineBrand);
 // Create dark theme
 export const fluxlineDarkTheme: Theme = createDarkTheme(fluxlineBrand);
 
-// Default export is light theme
-export default fluxlineLightTheme;
+// Default export is dark theme
+export default fluxlineDarkTheme;
